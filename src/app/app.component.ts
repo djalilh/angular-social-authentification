@@ -28,7 +28,7 @@ export class AppComponent implements OnInit{
   }
 
   public FacebookLogin(){
-    console.log("Facebook login");
+    this.authService.signIn(FacebookLoginProvider.PROVIDER_ID);
   }
 
   public SignOut(): void {
